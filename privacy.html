@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omnishot — Privacy Policy</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:      #0a0a0c;
+      --card:    #15151a;
+      --border:  rgba(255,255,255,0.08);
+      --muted:   rgba(255,255,255,0.58);
+      --faint:   rgba(255,255,255,0.35);
+      --yellow:  #f5d547;
+      --orange:  #ffb648;
+      --pink:    #e63b7a;
+    }
+
+    body {
+      background: var(--bg);
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+      padding: 0;
+    }
+
+    header {
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .logo-mark {
+      width: 36px; height: 36px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--yellow), var(--orange), var(--pink));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .header-app {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: -0.2px;
+    }
+
+    .lang-toggle {
+      display: flex;
+      gap: 4px;
+    }
+
+    .lang-btn {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-family: inherit;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .lang-btn.active {
+      color: #fff;
+      border-color: rgba(255,255,255,0.3);
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .page-tag {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      color: var(--yellow);
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.6px;
+      margin-top: 10px;
+      background: linear-gradient(135deg, var(--yellow), var(--orange), #fff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .updated {
+      color: var(--faint);
+      font-size: 13px;
+      margin-top: 8px;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 36px 0;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.2px;
+      margin-bottom: 12px;
+      margin-top: 36px;
+      color: #fff;
+    }
+
+    h2:first-of-type {
+      margin-top: 0;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 14px;
+    }
+
+    ul li {
+      color: var(--muted);
+      font-size: 15px;
+      padding: 5px 0 5px 20px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "–";
+      position: absolute;
+      left: 0;
+      color: var(--faint);
+    }
+
+    a {
+      color: var(--orange);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .highlight-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px 20px;
+      margin: 20px 0;
+    }
+
+    .highlight-box p {
+      margin: 0;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--faint);
+      font-size: 12px;
+      margin-top: 60px;
+    }
+
+    footer a { color: var(--faint); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a class="header-left" href="index.html">
+      <div class="logo-mark">⬡</div>
+      <span class="header-app">Omnishot</span>
+    </a>
+    <div class="lang-toggle">
+      <button class="lang-btn active" onclick="setLang('en')" id="btn-en">EN</button>
+      <button class="lang-btn" onclick="setLang('tr')" id="btn-tr">TR</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-tag" id="tag">Privacy Policy</div>
+    <h1 id="title">We respect your privacy.</h1>
+    <p class="updated" id="updated">Last updated: May 7, 2026</p>
+
+    <hr class="divider" />
+
+    <!-- Section 1 -->
+    <h2 id="s1h">1. Overview</h2>
+    <p id="s1p1">Omnishot is a camera and video recording application for iOS. We are committed to protecting your privacy. This Privacy Policy explains what information we collect, how we use it, and your rights regarding your data.</p>
+    <p id="s1p2">By using Omnishot, you agree to the practices described in this policy.</p>
+
+    <!-- Section 2 -->
+    <h2 id="s2h">2. Information We Collect</h2>
+
+    <h2 style="font-size:15px; font-weight:600; color: var(--muted); margin-top:20px; margin-bottom:8px;" id="s2h1">2.1 Camera & Microphone</h2>
+    <p id="s2p1">Omnishot requires access to your device's camera and microphone solely to provide its core recording functionality. Photos and videos you capture are saved directly to your device's photo library. We do not upload, transmit, or store your media on any server.</p>
+
+    <h2 style="font-size:15px; font-weight:600; color: var(--muted); margin-top:20px; margin-bottom:8px;" id="s2h2">2.2 Subscription Data (RevenueCat)</h2>
+    <p id="s2p2">Omnishot uses <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat</a> to manage in-app subscriptions. RevenueCat may collect:</p>
+    <ul>
+      <li id="s2l1">An anonymous app user ID generated by RevenueCat</li>
+      <li id="s2l2">Purchase receipts and subscription status</li>
+      <li id="s2l3">Device type and OS version (for analytics)</li>
+    </ul>
+    <p id="s2p3">This data is used exclusively to validate and manage your Pro subscription. No personally identifiable information (name, email, etc.) is collected through RevenueCat unless you explicitly provide it.</p>
+
+    <h2 style="font-size:15px; font-weight:600; color: var(--muted); margin-top:20px; margin-bottom:8px;" id="s2h3">2.3 Subscription Status Sync (Convex)</h2>
+    <p id="s2p4">We use <a href="https://www.convex.dev/privacy" target="_blank">Convex</a> to sync your subscription status in real time. Only your anonymous RevenueCat user ID and subscription status (active / expired) are stored. No personal information is linked to this record.</p>
+
+    <!-- Section 3 -->
+    <h2 id="s3h">3. Information We Do NOT Collect</h2>
+    <ul>
+      <li id="s3l1">Your name, email address, or contact information</li>
+      <li id="s3l2">Your location</li>
+      <li id="s3l3">Your photos, videos, or any media captured in the app</li>
+      <li id="s3l4">Behavioral or usage analytics beyond what RevenueCat reports</li>
+    </ul>
+
+    <!-- Section 4 -->
+    <h2 id="s4h">4. How We Use Your Information</h2>
+    <p id="s4p1">The limited data we handle is used only to:</p>
+    <ul>
+      <li id="s4l1">Verify and restore your Pro subscription across app reinstalls</li>
+      <li id="s4l2">Provide customer support if you contact us</li>
+    </ul>
+    <p id="s4p2">We do not sell, rent, or share your data with third parties for marketing or advertising purposes.</p>
+
+    <!-- Section 5 -->
+    <h2 id="s5h">5. Third-Party Services</h2>
+    <p id="s5p">Omnishot integrates the following third-party services, each governed by their own privacy policy:</p>
+    <ul>
+      <li id="s5l1"><a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat</a> — subscription management</li>
+      <li id="s5l2"><a href="https://www.convex.dev/privacy" target="_blank">Convex</a> — real-time subscription status sync</li>
+      <li id="s5l3"><a href="https://www.apple.com/legal/privacy/" target="_blank">Apple App Store / StoreKit</a> — payment processing</li>
+    </ul>
+
+    <!-- Section 6 -->
+    <h2 id="s6h">6. Data Retention</h2>
+    <p id="s6p">Subscription status records are retained as long as your account is active with RevenueCat. You may request deletion by contacting us. Upon deletion, your anonymous ID and subscription record will be removed from our Convex database.</p>
+
+    <!-- Section 7 -->
+    <h2 id="s7h">7. Children's Privacy</h2>
+    <p id="s7p">Omnishot is not directed to children under the age of 13. We do not knowingly collect any personal information from children. If you believe a child has provided us with personal information, please contact us and we will promptly delete it.</p>
+
+    <!-- Section 8 -->
+    <h2 id="s8h">8. Your Rights</h2>
+    <p id="s8p1">Depending on your jurisdiction, you may have the right to:</p>
+    <ul>
+      <li id="s8l1">Access the data we hold about you</li>
+      <li id="s8l2">Request correction or deletion of your data</li>
+      <li id="s8l3">Withdraw consent for data processing</li>
+    </ul>
+    <p id="s8p2">To exercise these rights, contact us at the address below.</p>
+
+    <!-- Section 9 -->
+    <h2 id="s9h">9. Changes to This Policy</h2>
+    <p id="s9p">We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated date. Continued use of the app after changes constitutes acceptance of the new policy.</p>
+
+    <!-- Section 10 -->
+    <h2 id="s10h">10. Contact</h2>
+    <div class="highlight-box">
+      <p id="s10p">Questions about this Privacy Policy? Contact us at:<br />
+      <a href="mailto:support@omnishot.app">support@omnishot.app</a></p>
+    </div>
+
+    <footer>
+      <p id="footer-text">© 2026 Omnishot. All rights reserved. &nbsp;·&nbsp; <a href="terms.html" id="footer-link">Terms of Service</a></p>
+    </footer>
+  </main>
+
+  <script>
+    const content = {
+      en: {
+        tag: "Privacy Policy",
+        title: "We respect your privacy.",
+        updated: "Last updated: May 7, 2026",
+        s1h: "1. Overview",
+        s1p1: "Omnishot is a camera and video recording application for iOS. We are committed to protecting your privacy. This Privacy Policy explains what information we collect, how we use it, and your rights regarding your data.",
+        s1p2: "By using Omnishot, you agree to the practices described in this policy.",
+        s2h: "2. Information We Collect",
+        s2h1: "2.1 Camera & Microphone",
+        s2p1: "Omnishot requires access to your device's camera and microphone solely to provide its core recording functionality. Photos and videos you capture are saved directly to your device's photo library. We do not upload, transmit, or store your media on any server.",
+        s2h2: "2.2 Subscription Data (RevenueCat)",
+        s2p2: "Omnishot uses <a href='https://www.revenuecat.com/privacy' target='_blank'>RevenueCat</a> to manage in-app subscriptions. RevenueCat may collect:",
+        s2l1: "An anonymous app user ID generated by RevenueCat",
+        s2l2: "Purchase receipts and subscription status",
+        s2l3: "Device type and OS version (for analytics)",
+        s2p3: "This data is used exclusively to validate and manage your Pro subscription. No personally identifiable information (name, email, etc.) is collected through RevenueCat unless you explicitly provide it.",
+        s2h3: "2.3 Subscription Status Sync (Convex)",
+        s2p4: "We use <a href='https://www.convex.dev/privacy' target='_blank'>Convex</a> to sync your subscription status in real time. Only your anonymous RevenueCat user ID and subscription status (active / expired) are stored. No personal information is linked to this record.",
+        s3h: "3. Information We Do NOT Collect",
+        s3l1: "Your name, email address, or contact information",
+        s3l2: "Your location",
+        s3l3: "Your photos, videos, or any media captured in the app",
+        s3l4: "Behavioral or usage analytics beyond what RevenueCat reports",
+        s4h: "4. How We Use Your Information",
+        s4p1: "The limited data we handle is used only to:",
+        s4l1: "Verify and restore your Pro subscription across app reinstalls",
+        s4l2: "Provide customer support if you contact us",
+        s4p2: "We do not sell, rent, or share your data with third parties for marketing or advertising purposes.",
+        s5h: "5. Third-Party Services",
+        s5p: "Omnishot integrates the following third-party services, each governed by their own privacy policy:",
+        s5l1: "<a href='https://www.revenuecat.com/privacy' target='_blank'>RevenueCat</a> — subscription management",
+        s5l2: "<a href='https://www.convex.dev/privacy' target='_blank'>Convex</a> — real-time subscription status sync",
+        s5l3: "<a href='https://www.apple.com/legal/privacy/' target='_blank'>Apple App Store / StoreKit</a> — payment processing",
+        s6h: "6. Data Retention",
+        s6p: "Subscription status records are retained as long as your account is active with RevenueCat. You may request deletion by contacting us. Upon deletion, your anonymous ID and subscription record will be removed from our Convex database.",
+        s7h: "7. Children's Privacy",
+        s7p: "Omnishot is not directed to children under the age of 13. We do not knowingly collect any personal information from children. If you believe a child has provided us with personal information, please contact us and we will promptly delete it.",
+        s8h: "8. Your Rights",
+        s8p1: "Depending on your jurisdiction, you may have the right to:",
+        s8l1: "Access the data we hold about you",
+        s8l2: "Request correction or deletion of your data",
+        s8l3: "Withdraw consent for data processing",
+        s8p2: "To exercise these rights, contact us at the address below.",
+        s9h: "9. Changes to This Policy",
+        s9p: "We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated date. Continued use of the app after changes constitutes acceptance of the new policy.",
+        s10h: "10. Contact",
+        s10p: "Questions about this Privacy Policy? Contact us at:<br /><a href='mailto:support@omnishot.app'>support@omnishot.app</a>",
+        footerText: "© 2026 Omnishot. All rights reserved. · <a href='terms.html'>Terms of Service</a>",
+        footerLink: "Terms of Service"
+      },
+      tr: {
+        tag: "Gizlilik Politikası",
+        title: "Gizliliğinize saygı duyuyoruz.",
+        updated: "Son güncelleme: 7 Mayıs 2026",
+        s1h: "1. Genel Bakış",
+        s1p1: "Omnishot, iOS için bir kamera ve video kayıt uygulamasıdır. Gizliliğinizi korumaya kararlıyız. Bu Gizlilik Politikası, hangi bilgileri topladığımızı, bunları nasıl kullandığımızı ve verilerinizle ilgili haklarınızı açıklar.",
+        s1p2: "Omnishot'ı kullanarak bu politikada açıklanan uygulamaları kabul etmiş olursunuz.",
+        s2h: "2. Topladığımız Bilgiler",
+        s2h1: "2.1 Kamera ve Mikrofon",
+        s2p1: "Omnishot, yalnızca temel kayıt işlevini sunmak amacıyla cihazınızın kamerasına ve mikrofonuna erişim gerektirir. Çektiğiniz fotoğraf ve videolar doğrudan cihazınızın fotoğraf kütüphanesine kaydedilir. Medyanızı herhangi bir sunucuya yüklemiyoruz, iletmiyoruz veya depolamıyoruz.",
+        s2h2: "2.2 Abonelik Verileri (RevenueCat)",
+        s2p2: "Omnishot, uygulama içi abonelikleri yönetmek için <a href='https://www.revenuecat.com/privacy' target='_blank'>RevenueCat</a> kullanmaktadır. RevenueCat şunları toplayabilir:",
+        s2l1: "RevenueCat tarafından oluşturulan anonim bir uygulama kullanıcı kimliği",
+        s2l2: "Satın alma makbuzları ve abonelik durumu",
+        s2l3: "Cihaz türü ve işletim sistemi sürümü (analitik amaçlı)",
+        s2p3: "Bu veriler, yalnızca Pro aboneliğinizi doğrulamak ve yönetmek amacıyla kullanılır. Açıkça sağlamadığınız sürece RevenueCat aracılığıyla kişisel olarak tanımlanabilir bilgi (ad, e-posta vb.) toplanmaz.",
+        s2h3: "2.3 Abonelik Durumu Senkronizasyonu (Convex)",
+        s2p4: "Abonelik durumunuzu gerçek zamanlı olarak senkronize etmek için <a href='https://www.convex.dev/privacy' target='_blank'>Convex</a> kullanıyoruz. Yalnızca anonim RevenueCat kullanıcı kimliğiniz ve abonelik durumunuz (aktif / süresi dolmuş) saklanır. Bu kayıtla kişisel bilgi ilişkilendirilmez.",
+        s3h: "3. Toplamadığımız Bilgiler",
+        s3l1: "Adınız, e-posta adresiniz veya iletişim bilgileriniz",
+        s3l2: "Konumunuz",
+        s3l3: "Uygulamada çekilen fotoğraflar, videolar veya medya",
+        s3l4: "RevenueCat'in raporladığı verilerin ötesinde davranışsal veya kullanım analitiği",
+        s4h: "4. Bilgilerinizi Nasıl Kullanıyoruz",
+        s4p1: "İşlediğimiz sınırlı veriler yalnızca şu amaçlarla kullanılır:",
+        s4l1: "Uygulama yeniden yüklemelerinde Pro aboneliğinizi doğrulamak ve geri yüklemek",
+        s4l2: "Bize ulaşmanız halinde müşteri desteği sağlamak",
+        s4p2: "Verilerinizi pazarlama veya reklam amacıyla üçüncü taraflara satmıyor, kiraya vermiyor veya paylaşmıyoruz.",
+        s5h: "5. Üçüncü Taraf Hizmetleri",
+        s5p: "Omnishot, her biri kendi gizlilik politikasına tabi olan aşağıdaki üçüncü taraf hizmetlerini entegre etmektedir:",
+        s5l1: "<a href='https://www.revenuecat.com/privacy' target='_blank'>RevenueCat</a> — abonelik yönetimi",
+        s5l2: "<a href='https://www.convex.dev/privacy' target='_blank'>Convex</a> — gerçek zamanlı abonelik durumu senkronizasyonu",
+        s5l3: "<a href='https://www.apple.com/legal/privacy/' target='_blank'>Apple App Store / StoreKit</a> — ödeme işleme",
+        s6h: "6. Verilerin Saklanması",
+        s6p: "Abonelik durumu kayıtları, RevenueCat hesabınız aktif olduğu sürece saklanır. Bize ulaşarak silme talebinde bulunabilirsiniz. Silme işlemi yapıldığında anonim kimliğiniz ve abonelik kaydınız Convex veritabanımızdan kaldırılır.",
+        s7h: "7. Çocukların Gizliliği",
+        s7p: "Omnishot, 13 yaşın altındaki çocuklara yönelik değildir. Çocuklardan kasıtlı olarak kişisel bilgi toplamıyoruz. Bir çocuğun bize kişisel bilgi sağladığını düşünüyorsanız, lütfen bizimle iletişime geçin; bilgileri derhal sileriz.",
+        s8h: "8. Haklarınız",
+        s8p1: "Bulunduğunuz yargı bölgesine bağlı olarak şu haklara sahip olabilirsiniz:",
+        s8l1: "Hakkınızda tuttuğumuz verilere erişim",
+        s8l2: "Verilerinizin düzeltilmesini veya silinmesini talep etme",
+        s8l3: "Veri işleme iznini geri çekme",
+        s8p2: "Bu hakları kullanmak için aşağıdaki adresle bizimle iletişime geçin.",
+        s9h: "9. Bu Politikadaki Değişiklikler",
+        s9p: "Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Değişiklikler, güncellenmiş bir tarihle bu sayfada yayınlanacaktır. Değişikliklerden sonra uygulamayı kullanmaya devam etmeniz, yeni politikayı kabul ettiğiniz anlamına gelir.",
+        s10h: "10. İletişim",
+        s10p: "Bu Gizlilik Politikası hakkında sorularınız mı var? Bize ulaşın:<br /><a href='mailto:support@omnishot.app'>support@omnishot.app</a>",
+        footerText: "© 2026 Omnishot. Tüm hakları saklıdır. · <a href='terms.html'>Kullanım Koşulları</a>",
+        footerLink: "Kullanım Koşulları"
+      }
+    };
+
+    const ids = ['tag','title','updated','s1h','s1p1','s1p2','s2h','s2h1','s2p1','s2h2','s2p2',
+      's2l1','s2l2','s2l3','s2p3','s2h3','s2p4','s3h','s3l1','s3l2','s3l3','s3l4',
+      's4h','s4p1','s4l1','s4l2','s4p2','s5h','s5p','s5l1','s5l2','s5l3',
+      's6h','s6p','s7h','s7p','s8h','s8p1','s8l1','s8l2','s8l3','s8p2',
+      's9h','s9p','s10h','s10p'];
+
+    function setLang(lang) {
+      const s = content[lang];
+      ids.forEach(id => {
+        const el = document.getElementById(id);
+        if (el && s[id] !== undefined) el.innerHTML = s[id];
+      });
+      document.getElementById('footer-text').innerHTML = s.footerText;
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
+      document.documentElement.lang = lang;
+    }
+
+    // Read ?lang= param or fall back to browser language
+    const params = new URLSearchParams(window.location.search);
+    const langParam = params.get('lang');
+    const defaultLang = langParam || (navigator.language.startsWith('tr') ? 'tr' : 'en');
+    setLang(defaultLang);
+  </script>
+
+</body>
+</html>

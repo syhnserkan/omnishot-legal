@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omnishot — Terms of Service</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:      #0a0a0c;
+      --card:    #15151a;
+      --border:  rgba(255,255,255,0.08);
+      --muted:   rgba(255,255,255,0.58);
+      --faint:   rgba(255,255,255,0.35);
+      --yellow:  #f5d547;
+      --orange:  #ffb648;
+      --pink:    #e63b7a;
+    }
+
+    body {
+      background: var(--bg);
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+
+    header {
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .logo-mark {
+      width: 36px; height: 36px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--yellow), var(--orange), var(--pink));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .header-app {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: -0.2px;
+    }
+
+    .lang-toggle {
+      display: flex;
+      gap: 4px;
+    }
+
+    .lang-btn {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-family: inherit;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .lang-btn.active {
+      color: #fff;
+      border-color: rgba(255,255,255,0.3);
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .page-tag {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      color: var(--yellow);
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.6px;
+      margin-top: 10px;
+      background: linear-gradient(135deg, var(--yellow), var(--orange), #fff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .updated {
+      color: var(--faint);
+      font-size: 13px;
+      margin-top: 8px;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 36px 0;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.2px;
+      margin-bottom: 12px;
+      margin-top: 36px;
+      color: #fff;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 14px;
+    }
+
+    ul li {
+      color: var(--muted);
+      font-size: 15px;
+      padding: 5px 0 5px 20px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "–";
+      position: absolute;
+      left: 0;
+      color: var(--faint);
+    }
+
+    a {
+      color: var(--orange);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .highlight-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px 20px;
+      margin: 20px 0;
+    }
+
+    .highlight-box p { margin: 0; }
+
+    footer {
+      text-align: center;
+      color: var(--faint);
+      font-size: 12px;
+      margin-top: 60px;
+    }
+
+    footer a { color: var(--faint); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a class="header-left" href="index.html">
+      <div class="logo-mark">⬡</div>
+      <span class="header-app">Omnishot</span>
+    </a>
+    <div class="lang-toggle">
+      <button class="lang-btn active" onclick="setLang('en')" id="btn-en">EN</button>
+      <button class="lang-btn" onclick="setLang('tr')" id="btn-tr">TR</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-tag" id="tag">Terms of Service</div>
+    <h1 id="title">Simple, fair terms.</h1>
+    <p class="updated" id="updated">Last updated: May 7, 2026</p>
+
+    <hr class="divider" />
+
+    <!-- Section 1 -->
+    <h2 id="s1h">1. Acceptance of Terms</h2>
+    <p id="s1p1">By downloading, installing, or using Omnishot ("the App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the App.</p>
+    <p id="s1p2">These Terms apply to all users of the App, including users of the free version and Omnishot Pro subscribers.</p>
+
+    <!-- Section 2 -->
+    <h2 id="s2h">2. Description of Service</h2>
+    <p id="s2p">Omnishot is a camera and video recording application for iOS devices. It offers a free tier with basic features and an Omnishot Pro subscription that unlocks additional camera modes, formats, and tools.</p>
+
+    <!-- Section 3 -->
+    <h2 id="s3h">3. Omnishot Pro Subscription</h2>
+
+    <h2 style="font-size:15px; font-weight:600; color: var(--muted); margin-top:20px; margin-bottom:8px;" id="s3h1">3.1 Billing</h2>
+    <p id="s3p1">Omnishot Pro is available as a weekly or annual auto-renewing subscription. Payment is charged to your Apple ID account at confirmation of purchase. Your subscription automatically renews unless cancelled at least 24 hours before the end of the current period.</p>
+
+    <h2 style="font-size:15px; font-weight:600; color: var(--muted); margin-top:20px; margin-bottom:8px;" id="s3h2">3.2 Free Trial</h2>
+    <p id="s3p2">Where offered, a free trial will be provided for the annual subscription. Any unused portion of a free trial is forfeited when a subscription is purchased. Only one free trial per Apple ID.</p>
+
+    <h2 style="font-size:15px; font-weight:600; color: var(--muted); margin-top:20px; margin-bottom:8px;" id="s3h3">3.3 Cancellation & Refunds</h2>
+    <p id="s3p3">You may cancel your subscription at any time through your Apple ID account settings. Cancellation takes effect at the end of the current billing period. Refunds are handled by Apple in accordance with their <a href="https://www.apple.com/legal/internet-services/itunes/us/terms.html" target="_blank">App Store Terms</a>. We do not issue refunds directly.</p>
+
+    <h2 style="font-size:15px; font-weight:600; color: var(--muted); margin-top:20px; margin-bottom:8px;" id="s3h4">3.4 Price Changes</h2>
+    <p id="s3p4">We reserve the right to change subscription prices. You will be notified of any price changes in advance, and your continued subscription will constitute acceptance of the new price.</p>
+
+    <!-- Section 4 -->
+    <h2 id="s4h">4. Permitted Use</h2>
+    <p id="s4p">You may use Omnishot for personal and commercial creative projects. You may not:</p>
+    <ul>
+      <li id="s4l1">Reverse-engineer, decompile, or disassemble the App</li>
+      <li id="s4l2">Use the App to capture content that violates applicable laws or the rights of others</li>
+      <li id="s4l3">Attempt to gain unauthorized access to any portion of the App or its infrastructure</li>
+      <li id="s4l4">Redistribute, sublicense, or resell access to Omnishot Pro features</li>
+    </ul>
+
+    <!-- Section 5 -->
+    <h2 id="s5h">5. Intellectual Property</h2>
+    <p id="s5p1">All content, design, code, and branding within the App are the exclusive property of Omnishot and are protected by copyright and intellectual property laws.</p>
+    <p id="s5p2">Content you create using the App (photos and videos) remains your property. We claim no rights over the media you produce.</p>
+
+    <!-- Section 6 -->
+    <h2 id="s6h">6. Privacy</h2>
+    <p id="s6p">Your use of the App is also governed by our <a href="privacy.html" id="pp-link">Privacy Policy</a>, which is incorporated into these Terms by reference.</p>
+
+    <!-- Section 7 -->
+    <h2 id="s7h">7. Disclaimer of Warranties</h2>
+    <p id="s7p">The App is provided "as is" and "as available" without warranties of any kind, either express or implied. We do not warrant that the App will be uninterrupted, error-free, or free of viruses or other harmful components. Your use of the App is at your sole risk.</p>
+
+    <!-- Section 8 -->
+    <h2 id="s8h">8. Limitation of Liability</h2>
+    <p id="s8p">To the maximum extent permitted by applicable law, Omnishot and its developers shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including loss of data, revenue, or profits, arising out of or in connection with your use of the App.</p>
+
+    <!-- Section 9 -->
+    <h2 id="s9h">9. Governing Law</h2>
+    <p id="s9p">These Terms are governed by and construed in accordance with the laws of the Republic of Turkey, without regard to its conflict of law provisions.</p>
+
+    <!-- Section 10 -->
+    <h2 id="s10h">10. Changes to Terms</h2>
+    <p id="s10p">We reserve the right to modify these Terms at any time. Changes will be posted on this page with an updated date. Continued use of the App after changes constitutes your acceptance of the revised Terms.</p>
+
+    <!-- Section 11 -->
+    <h2 id="s11h">11. Contact</h2>
+    <div class="highlight-box">
+      <p id="s11p">Questions about these Terms? Contact us at:<br />
+      <a href="mailto:support@omnishot.app">support@omnishot.app</a></p>
+    </div>
+
+    <footer>
+      <p id="footer-text">© 2026 Omnishot. All rights reserved. &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+  </main>
+
+  <script>
+    const content = {
+      en: {
+        tag: "Terms of Service",
+        title: "Simple, fair terms.",
+        updated: "Last updated: May 7, 2026",
+        s1h: "1. Acceptance of Terms",
+        s1p1: "By downloading, installing, or using Omnishot (\"the App\"), you agree to be bound by these Terms of Service (\"Terms\"). If you do not agree to these Terms, do not use the App.",
+        s1p2: "These Terms apply to all users of the App, including users of the free version and Omnishot Pro subscribers.",
+        s2h: "2. Description of Service",
+        s2p: "Omnishot is a camera and video recording application for iOS devices. It offers a free tier with basic features and an Omnishot Pro subscription that unlocks additional camera modes, formats, and tools.",
+        s3h: "3. Omnishot Pro Subscription",
+        s3h1: "3.1 Billing",
+        s3p1: "Omnishot Pro is available as a weekly or annual auto-renewing subscription. Payment is charged to your Apple ID account at confirmation of purchase. Your subscription automatically renews unless cancelled at least 24 hours before the end of the current period.",
+        s3h2: "3.2 Free Trial",
+        s3p2: "Where offered, a free trial will be provided for the annual subscription. Any unused portion of a free trial is forfeited when a subscription is purchased. Only one free trial per Apple ID.",
+        s3h3: "3.3 Cancellation & Refunds",
+        s3p3: "You may cancel your subscription at any time through your Apple ID account settings. Cancellation takes effect at the end of the current billing period. Refunds are handled by Apple in accordance with their <a href='https://www.apple.com/legal/internet-services/itunes/us/terms.html' target='_blank'>App Store Terms</a>. We do not issue refunds directly.",
+        s3h4: "3.4 Price Changes",
+        s3p4: "We reserve the right to change subscription prices. You will be notified of any price changes in advance, and your continued subscription will constitute acceptance of the new price.",
+        s4h: "4. Permitted Use",
+        s4p: "You may use Omnishot for personal and commercial creative projects. You may not:",
+        s4l1: "Reverse-engineer, decompile, or disassemble the App",
+        s4l2: "Use the App to capture content that violates applicable laws or the rights of others",
+        s4l3: "Attempt to gain unauthorized access to any portion of the App or its infrastructure",
+        s4l4: "Redistribute, sublicense, or resell access to Omnishot Pro features",
+        s5h: "5. Intellectual Property",
+        s5p1: "All content, design, code, and branding within the App are the exclusive property of Omnishot and are protected by copyright and intellectual property laws.",
+        s5p2: "Content you create using the App (photos and videos) remains your property. We claim no rights over the media you produce.",
+        s6h: "6. Privacy",
+        s6p: "Your use of the App is also governed by our <a href='privacy.html'>Privacy Policy</a>, which is incorporated into these Terms by reference.",
+        s7h: "7. Disclaimer of Warranties",
+        s7p: "The App is provided \"as is\" and \"as available\" without warranties of any kind, either express or implied. We do not warrant that the App will be uninterrupted, error-free, or free of viruses or other harmful components. Your use of the App is at your sole risk.",
+        s8h: "8. Limitation of Liability",
+        s8p: "To the maximum extent permitted by applicable law, Omnishot and its developers shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including loss of data, revenue, or profits, arising out of or in connection with your use of the App.",
+        s9h: "9. Governing Law",
+        s9p: "These Terms are governed by and construed in accordance with the laws of the Republic of Turkey, without regard to its conflict of law provisions.",
+        s10h: "10. Changes to Terms",
+        s10p: "We reserve the right to modify these Terms at any time. Changes will be posted on this page with an updated date. Continued use of the App after changes constitutes your acceptance of the revised Terms.",
+        s11h: "11. Contact",
+        s11p: "Questions about these Terms? Contact us at:<br /><a href='mailto:support@omnishot.app'>support@omnishot.app</a>",
+        footerText: "© 2026 Omnishot. All rights reserved. · <a href='privacy.html'>Privacy Policy</a>"
+      },
+      tr: {
+        tag: "Kullanım Koşulları",
+        title: "Sade ve adil koşullar.",
+        updated: "Son güncelleme: 7 Mayıs 2026",
+        s1h: "1. Koşulların Kabulu",
+        s1p1: "Omnishot'ı (\"Uygulama\") indirerek, yükleyerek veya kullanarak bu Kullanım Koşullarına (\"Koşullar\") tabi olmayı kabul etmiş olursunuz. Bu Koşulları kabul etmiyorsanız Uygulamayı kullanmayın.",
+        s1p2: "Bu Koşullar, ücretsiz sürüm kullanıcıları ve Omnishot Pro aboneleri dahil tüm kullanıcılar için geçerlidir.",
+        s2h: "2. Hizmet Açıklaması",
+        s2p: "Omnishot, iOS cihazlar için bir kamera ve video kayıt uygulamasıdır. Temel özelliklerle ücretsiz bir katman ve ek kamera modları, formatlar ve araçların kilidini açan Omnishot Pro aboneliği sunmaktadır.",
+        s3h: "3. Omnishot Pro Aboneliği",
+        s3h1: "3.1 Faturalandırma",
+        s3p1: "Omnishot Pro, haftalık veya yıllık otomatik yenilenen abonelik olarak sunulmaktadır. Ödeme, satın alma onayında Apple ID hesabınıza yansıtılır. Aboneliğiniz, mevcut dönemin bitiminden en az 24 saat önce iptal edilmediği sürece otomatik olarak yenilenir.",
+        s3h2: "3.2 Ücretsiz Deneme",
+        s3p2: "Sunulduğu durumlarda, yıllık abonelik için ücretsiz deneme süresi sağlanır. Abonelik satın alındığında, ücretsiz deneme süresinin kullanılmayan kısmı geçersiz sayılır. Her Apple ID için yalnızca bir ücretsiz deneme hakkı tanınır.",
+        s3h3: "3.3 İptal ve İadeler",
+        s3p3: "Aboneliğinizi Apple ID hesap ayarlarından istediğiniz zaman iptal edebilirsiniz. İptal işlemi, mevcut faturalandırma döneminin sonunda yürürlüğe girer. İadeler, Apple'ın <a href='https://www.apple.com/legal/internet-services/itunes/us/terms.html' target='_blank'>App Store Koşulları</a> doğrultusunda Apple tarafından işleme alınır. Doğrudan iade yapmıyoruz.",
+        s3h4: "3.4 Fiyat Değişiklikleri",
+        s3p4: "Abonelik fiyatlarını değiştirme hakkımızı saklı tutarız. Fiyat değişikliklerinden önceden haberdar edilirsiniz; aboneliğinizi sürdürmeniz yeni fiyatı kabul ettiğiniz anlamına gelir.",
+        s4h: "4. İzin Verilen Kullanım",
+        s4p: "Omnishot'ı kişisel ve ticari yaratıcı projeler için kullanabilirsiniz. Şunları yapamazsınız:",
+        s4l1: "Uygulamayı tersine mühendislik, derleme veya parçalara ayırma işlemine tabi tutmak",
+        s4l2: "Yürürlükteki yasaları veya başkalarının haklarını ihlal eden içerik kaydetmek için Uygulamayı kullanmak",
+        s4l3: "Uygulamanın herhangi bir bölümüne veya altyapısına yetkisiz erişim sağlamaya çalışmak",
+        s4l4: "Omnishot Pro özelliklerine erişimi yeniden dağıtmak, alt lisanslamak veya yeniden satmak",
+        s5h: "5. Fikri Mülkiyet",
+        s5p1: "Uygulama içindeki tüm içerik, tasarım, kod ve marka unsurları Omnishot'ın münhasır mülkiyetinde olup telif hakkı ve fikri mülkiyet yasalarıyla korunmaktadır.",
+        s5p2: "Uygulama ile oluşturduğunuz içerik (fotoğraf ve videolar) size aittir. Ürettiğiniz medya üzerinde herhangi bir hak talebinde bulunmuyoruz.",
+        s6h: "6. Gizlilik",
+        s6p: "Uygulamayı kullanımınız aynı zamanda bu Koşullara atıfla dahil edilen <a href='privacy.html'>Gizlilik Politikamız</a> tarafından da yönetilmektedir.",
+        s7h: "7. Garanti Reddi",
+        s7p: "Uygulama, açık veya zımni herhangi bir garanti olmaksızın \"olduğu gibi\" ve \"mevcut olduğu şekliyle\" sunulmaktadır. Uygulamanın kesintisiz, hatasız veya virüs ya da diğer zararlı bileşenlerden arınmış olacağını garanti etmiyoruz. Uygulamayı kullanmanız tamamen kendi sorumluluğunuzdadır.",
+        s8h: "8. Sorumluluk Sınırlaması",
+        s8p: "Yürürlükteki yasaların izin verdiği azami ölçüde, Omnishot ve geliştiricileri, Uygulamayı kullanımınızdan kaynaklanan veya bununla bağlantılı veri, gelir veya kâr kaybı dahil her türlü dolaylı, arızi, özel, bağıl veya cezai zarardan sorumlu tutulamaz.",
+        s9h: "9. Uygulanacak Hukuk",
+        s9p: "Bu Koşullar, kanunlar ihtilafı hükümlerine bakılmaksızın Türkiye Cumhuriyeti kanunlarına göre yönetilir ve yorumlanır.",
+        s10h: "10. Koşullardaki Değişiklikler",
+        s10p: "Bu Koşulları istediğimiz zaman değiştirme hakkımızı saklı tutarız. Değişiklikler, güncellenmiş bir tarihle bu sayfada yayınlanacaktır. Değişikliklerden sonra Uygulamayı kullanmaya devam etmeniz, revize edilmiş Koşulları kabul ettiğiniz anlamına gelir.",
+        s11h: "11. İletişim",
+        s11p: "Bu Koşullar hakkında sorularınız mı var? Bize ulaşın:<br /><a href='mailto:support@omnishot.app'>support@omnishot.app</a>",
+        footerText: "© 2026 Omnishot. Tüm hakları saklıdır. · <a href='privacy.html'>Gizlilik Politikası</a>"
+      }
+    };
+
+    const ids = ['tag','title','updated',
+      's1h','s1p1','s1p2',
+      's2h','s2p',
+      's3h','s3h1','s3p1','s3h2','s3p2','s3h3','s3p3','s3h4','s3p4',
+      's4h','s4p','s4l1','s4l2','s4l3','s4l4',
+      's5h','s5p1','s5p2',
+      's6h','s6p',
+      's7h','s7p',
+      's8h','s8p',
+      's9h','s9p',
+      's10h','s10p',
+      's11h','s11p'];
+
+    function setLang(lang) {
+      const s = content[lang];
+      ids.forEach(id => {
+        const el = document.getElementById(id);
+        if (el && s[id] !== undefined) el.innerHTML = s[id];
+      });
+      document.getElementById('footer-text').innerHTML = s.footerText;
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
+      document.documentElement.lang = lang;
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    const langParam = params.get('lang');
+    const defaultLang = langParam || (navigator.language.startsWith('tr') ? 'tr' : 'en');
+    setLang(defaultLang);
+  </script>
+
+</body>
+</html>
